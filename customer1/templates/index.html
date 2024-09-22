@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <title>Customer 1 Page</title>
+  </head>
+  <body>
+    <h1>Customer 1 Page</h1>
+    <p>
+      <h3>1. To authenticate with broker</h3>
+      <h3>2. To authenticate with merchant</h3>
+      <h3>3. Send Key to Merchant</h3>
+      <h3>4. To view product from merchant</h3>
+      <h3>5. To buy product</h3>
+    </p>
+    <div class="container mt-5">
+      <h2>Enter option</h2>
+      <form action="/handleinput" method="post" enctype="multipart/form-data">
+        <div class="form-group">
+          <input
+            type="number"
+            class="form-control"
+            id="action_number"
+            name="action_number"
+            placeholder="Option"
+          />
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
